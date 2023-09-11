@@ -424,6 +424,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 2vh;
+  padding-block: 10vh;
 }
 
 .download__links {
@@ -476,12 +478,19 @@
   display: flex;
   gap:5vw;
   padding: 5vh 15vw;
+  overflow: hidden;
 }
 .footer__first {
   display: flex;
   flex-direction: column;
   gap: 2vh;
 
+}
+
+.footer__first span{
+    width: fit-content;
+    background: #000;
+    position: relative;
 }
 .footer__first a {
   text-decoration: none;
@@ -502,13 +511,10 @@
   line-height: 200%; /* 36px */
 }
 .footer__first input {
-  width: 521px;
-  height: 39px;
+  min-width: 30vw;
+  min-height: fit-content;
   flex-shrink: 0;
   border-radius: 8px;
-}
-.footer__first span {
-  position: relative;
 }
 
 input::placeholder {
@@ -523,12 +529,12 @@ input::placeholder {
 .footer__first span button {
   position: absolute;
   right: 0.3vw;
-  transform: translateY(15%);
+  transform: translateY(20%);
   color: #fff;
-  width: 135px;
-  height: 30px;
+  padding: 5px 10px;
   flex-shrink: 0;
   border-radius: 8px;
+  margin-right: 0.2vw;
   background: var(--dark-navy-color);
 }
 
@@ -548,6 +554,7 @@ input::placeholder {
     grid-template-columns: 1fr;
     gap: 5%;
   }
+  
   .course_card {
     display: flex;
     width: 100vw;
